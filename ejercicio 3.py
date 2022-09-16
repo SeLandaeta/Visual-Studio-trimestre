@@ -7,3 +7,4 @@ year3=year2+profit
 print(f"in the first year you will earn {round (year1, 2)}")
 print(f"in the second year you will earn {round (year2, 2)}")
 print(f"in the third year you will earn {round (year3, 2)}")
+print("hello world")
