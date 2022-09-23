@@ -11,7 +11,7 @@ else:
             cont += 1 
         aux -= 1 
 
-        if cont == 0 : 
-            print (f"The number {number} is prime")
-        else: 
-             print (f"The number {number} is not prime")
+if cont == 0 : 
+     print (f"The number {number} is prime")      
+else: 
+    print (f"The number {number} is not prime")
