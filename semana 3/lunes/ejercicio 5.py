@@ -1,6 +1,3 @@
-from operator import index
-
-
 vector1 = [1,2,3]
 vector2 = [-1,0,2]
 result_sum = 0

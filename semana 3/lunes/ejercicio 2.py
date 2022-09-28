@@ -1,5 +1,5 @@
 number = input("please enter  a number of floors for your trisngle -> ")
-aux = 1
+
 
 if number.isnumeric():
     number = int (number)
