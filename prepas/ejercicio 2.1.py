@@ -1,3 +1,6 @@
+from re import U
+
+
 while (True):
 
     comprar = input ("Bienvenidos a FLighnit ¿Quiere comprar un par de zapatos? (s/S => si) (N/n => no) \n ")
