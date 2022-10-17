@@ -20,7 +20,7 @@ def get_client_data(study):
     "id" : input("please write your id: "),
     "age" : input("please write your age: "),
     "gender" : input ("please write your gender M or F: ") ,
-   "study" : study,
+   "study" : study
    }
     return client
 
@@ -32,8 +32,26 @@ def print_invoice(client):
     print ("Age ", client.get("age"))
     print ("gender ",client.get("gender"))
     print ("study ", client.get("study"))
-    print ("Price" , client.get("price"))
+    print ("Price" , client .get("price"))
     print ("___________________________")
+
+def get_ammount(client,study):
+    return int(study.get(client.get("study").get("price")))
+
+def get_disccount(client,net,cont):
+    discount = 0
+    if client.get("gender")== "F" and int(client.get("Age"))>55:
+        discount += net * 0.25
+    elif client.get("gender")== "M" and int(client.get("Age"))>65:
+        discount += net * 0.25
+    if cont %2 !=0:
+        discount =+ net*0.02
+    return discount
+
+
+
+
+
 
 def main():
     studys_dict_values = {"U":{
@@ -59,7 +77,10 @@ def main():
                 option = get_user (studys_dict_values)
                 client = get_client_data(option)
                 print_invoice(client)
-                clients.append[client]
+                clients.append(client)
+                value = get_ammount(client,studys_dict_values)
+                disccount = get_disccount(client,value,len(clients))
+                total_ammount = value =- disccount
             elif option_menu== 2:
                 print (clients)
         else: 
