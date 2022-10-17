@@ -1,7 +1,3 @@
-from ast import Try
-from multiprocessing.connection import deliver_challenge
-
-
 def welcome():
     print ("^^^BIENVENIDO A PAPAS PIZZA^^^")
 
@@ -39,7 +35,6 @@ def realizar_compra(menu,tipospizzaspedidas,CantidadTamanoPedidas):
             elif tamano == 12:
                 costo += 10
             cantidad = int(input("Por favor ingrese la cantidad de pizzas que desea \n"))
-            break
             costo = cantidad*costo
             tipospizzaspedidas[pizza]+=1
             CantidadTamanoPedidas[tamano]+=1
@@ -162,9 +157,6 @@ def CerrarCompra(delivery,pedidos,pedidosMunicipios,listapizzas):
         print (f"precio con descuento: {Costo}")
         
         break 
-
-
-            
 
 def main():
 
