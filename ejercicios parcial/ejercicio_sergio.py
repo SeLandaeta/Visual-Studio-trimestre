@@ -72,15 +72,8 @@ def Cedula():
             print("Ingrese un valor valido")
 
 def Nombre():
-    while True:
-        try:
             nombre = input("Por favor ingrese su nombre: \n")
 
-            if not (nombre.isalpha()):
-                raise Exception 
-            return nombre 
-        except: 
-            print ("Ha ocurrido un error")
 
 def pedir_datos():
     cedula,descuento = Cedula()
