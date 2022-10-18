@@ -1,4 +1,4 @@
-#ejercicio 1 parcial 1 
+#ejercicio 2 parcial 1 
 def welcome ():
     print("******WELCOME TO LSU*******")
 
