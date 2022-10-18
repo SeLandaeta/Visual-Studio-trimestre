@@ -26,7 +26,6 @@ def realizar_compra(menu,tipospizzaspedidas,CantidadTamanoPedidas):
             for pizzaDic in menu:
                 if pizzaDic["pizza"] == pizza:
                     costo = int(pizzaDic["precio"][tipo][:-1])
-            tamanospermitidos = [8,10,12]
             tamano = int("Por favor elija un tamano para su pizza: \n-> 8  \n-> 10 \n3 -> 12 \n->")
             if tamano == 8:
                 costo += 0
@@ -39,7 +38,7 @@ def realizar_compra(menu,tipospizzaspedidas,CantidadTamanoPedidas):
             tipospizzaspedidas[pizza]+=1
             CantidadTamanoPedidas[tamano]+=1
 
-            return pizza,tipo,costo,tamano,cantidad 
+            return pizza,tipo,costo,tamano,cantidad
 
 def formato_pago():
     while True:

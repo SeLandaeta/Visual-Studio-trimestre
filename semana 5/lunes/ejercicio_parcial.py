@@ -48,11 +48,6 @@ def get_disccount(client,net,cont):
         discount =+ net*0.02
     return discount
 
-
-
-
-
-
 def main():
     studys_dict_values = {"U":{
         "name":"Ultra sonido",
