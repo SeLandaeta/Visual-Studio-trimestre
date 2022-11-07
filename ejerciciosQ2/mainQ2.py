@@ -29,6 +29,10 @@ def main():
 
     for product in products:
         colors = product.get("colors")
-        Flore.productos.append(Flore(product["id"],product["name"],product["type"],product["stock"],colors))
+        Flore.productos.append(Flore(product["id"],
+        product["name"],
+        product["type"],
+        product["stock"],
+        colors))
         print (Flore.productos)
 main()
