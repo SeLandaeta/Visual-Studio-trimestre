@@ -1,7 +1,7 @@
 def main():
     
-    archivo = open("archivo2.txt","w")
-    datos = archivo.write("HELLO WORLD")
+    archivo = open("archivo2.txt","a")
+    datos = archivo.write("\nAndrea Linares")
     archivo.close()
     print (datos)       
 
