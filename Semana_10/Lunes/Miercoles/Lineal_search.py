@@ -16,7 +16,7 @@ def main():
 def binarysearch(number,lista):
     start = 0
     final = len(lista) - 1
-    middle = (start + final) // 2
+    middle = (start + final) // 2 #sumar siempre el low
     if len(lista) == 1:
         if lista[0] == number:
             return number 
